@@ -1,6 +1,26 @@
 import UIKit
 
 //Arrays in Swift
+var newArray = [23, 77, 90, 64, 7]
+
+newArray.count
+newArray.first
+newArray.last
+newArray[0] //Subscripting
+newArray.append(99)
+newArray.insert(55, at: 2)
+newArray.shuffle()
+newArray.sorted()
+newArray.reverse()
+
+let sortedArray = newArray.sorted()
+let reversedArray = sortedArray.reversed()
+let finalArray = Array(reversedArray)
+
+
+print("Original Array: \(newArray)")
+print("Sorted Array: \(sortedArray)")
+print("Reversed Array: \(finalArray)")
 
 // Defining an array by specifying the type
 var arr1:[Int] = [10, 5, 19, 12, 10, 77]
@@ -98,6 +118,12 @@ print("\nTotal number of elements present in someArr3 = \(someArrC.isEmpty)")
 
 
 //Sets in Swift
+var ages = [22, 45, 67, 90, 22, 78, 45]
+var emptySet: Set<Int> = []
+var agesSet = Set(ages)
+agesSet.insert(555)
+agesSet.contains(555)
+print(agesSet)
 
 //Empty Set
 var mySet = Set<String>()
@@ -172,10 +198,18 @@ var result4 = setA.isSubset(of: setB)
 print("\nIs setA is the subset of setB?:", result4)
 
 
-//Dictionary in Swift
+//Dictionary in Swift (Key Value Pair)
 //Syntax:
 //var someDict =  [KeyType: ValueType](key:value)
 //var someArray = [key1: value, key2: value, key3: value3]
+
+let devies: [String:String] = [
+    "My Phone": "iPhone 12",
+    "My Laptop": "2015 MacBook Pro",
+    "My Table": "2018 iPad Pro",
+    "My Desktop": "2022 iMac Pro",
+]
+devies["My Phone"]
 
 var myDict = [3: "Black", 4: "Blue", 5: "Green", 6: "Blue", 7: "Pink"]
 
